@@ -11,6 +11,8 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js')
     }
   })
+  
+  mainWindow.setMenuBarVisibility(false)
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://trello.com')
